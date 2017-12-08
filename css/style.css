@@ -1046,6 +1046,7 @@ a.btn-mod:focus{
     font-family: 'Press Start 2P', cursive;
     color: lime;
     opacity: .9;
+    text-shadow: 3px 3px black;
 }
 
 /* Scroll down icon */
