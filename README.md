@@ -1,2 +1,1 @@
-# billyhunt.github.io
-Github Pages
+# billyhunt.com
