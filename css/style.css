@@ -6551,6 +6551,10 @@ section:hover .small-item-carousel .owl-next{
     #skills h4 {
         font-size: 12pt;
     }
+
+    .typed-container span {
+        font-size: 15pt;
+    }
 }
 
 .mfp-image-holder .mfp-content {
