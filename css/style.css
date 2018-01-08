@@ -1030,6 +1030,7 @@ a.btn-mod:focus{
     height: 100%;
     vertical-align: middle;
     padding-bottom: 35rem;
+    padding-top: 5rem;
 }
 
 .home-text img {
@@ -6546,9 +6547,9 @@ section:hover .small-item-carousel .owl-next{
     margin-top: 2rem;
 }
 
-@media (max-width: 768px) {
-    .skills-rank {
-        display: none;
+@media (max-width: 766px) {
+    #skills h4 {
+        font-size: 12pt;
     }
 }
 
@@ -6591,4 +6592,8 @@ figure img.mfp-img {
     font-family: 'Audiowide', cursive;
     font-size: 18px;
     font-weight: bold;
+}
+
+#about {
+    padding: 60px 0;
 }
