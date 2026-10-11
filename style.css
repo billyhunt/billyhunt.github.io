@@ -96,10 +96,10 @@ a:hover { color: var(--ink); }
   position: absolute;
   left: var(--x);
   top: var(--y);
-  width: calc(9px * var(--s));
-  height: calc(9px * var(--s));
-  margin: calc(-4.5px * var(--s)) 0 0 calc(-4.5px * var(--s));
-  filter: drop-shadow(0 0 2px rgba(122, 247, 255, .5));
+  width: calc(13px * var(--s));
+  height: calc(13px * var(--s));
+  margin: calc(-6.5px * var(--s)) 0 0 calc(-6.5px * var(--s));
+  filter: drop-shadow(0 0 3px rgba(122, 247, 255, .65));
   opacity: 0;
   animation: sparkle 7s ease-in-out calc(var(--d) * 2) infinite;
 }
@@ -112,7 +112,7 @@ a:hover { color: var(--ink); }
 }
 @keyframes sparkle {
   0%, 30%, 100% { opacity: 0; transform: scale(.3) rotate(0deg); }
-  50% { opacity: .6; transform: scale(1) rotate(30deg); }
+  50% { opacity: .85; transform: scale(1) rotate(30deg); }
   65% { opacity: 0; transform: scale(.6) rotate(40deg); }
 }
 
@@ -563,11 +563,11 @@ html:has(.arcade.playing) { overflow: hidden; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .starfield::after, .sparkle, .cursor { animation: none; }
-  .sparkle { opacity: .5; transform: scale(.7); }
+  .sparkle { opacity: .7; transform: scale(.7); }
   .starfield::after { opacity: .5; }
   .motion-item { display: none; }
 }
 /* Same resting state when the visitor pauses motion from the nav. */
 .paused .starfield::after, .paused .sparkle, .paused .cursor, .paused .press-start { animation: none; }
-.paused .sparkle { opacity: .5; transform: scale(.7); }
+.paused .sparkle { opacity: .7; transform: scale(.7); }
 .paused .starfield::after { opacity: .5; }
