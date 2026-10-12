@@ -1,809 +1,362 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Billy Hunt III - Developer</title>
-        <meta name="description" content="">
-        <meta name="keywords" content="">
-        <meta charset="utf-8">
-        <meta name="author" content="Roman Kirichik">
-        <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-        
-        <!-- Favicons -->
-        <link rel="shortcut icon" href="favicon.ico">
-        <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Billy Hunt · AI Engineering Lead</title>
+  <meta name="description" content="Billy Hunt is an AI engineering lead at Nava PBC who puts AI into production for government and gets agentic AI approved, governed and measured. He also spent more than a decade as a photographer and filmmaker.">
+  <link rel="canonical" href="https://www.billyhunt.com/">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#140726">
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style-responsive.css">
-        <link rel="stylesheet" href="css/animate.min.css">
-        <link rel="stylesheet" href="css/vertical-rhythm.min.css">
-        <link rel="stylesheet" href="css/owl.carousel.css">
-        <link rel="stylesheet" href="css/magnific-popup.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Audiowide|Press+Start+2P|Poppins" rel="stylesheet">
-    </head>
-    <body class="appear-animate">
-        
-        <!-- Page Loader -->        
-        <div class="page-loader">
-            <div class="loader">Loading...</div>
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://www.billyhunt.com/">
+  <meta property="og:title" content="Billy Hunt · AI Engineering Lead">
+  <meta property="og:description" content="AI engineering lead at Nava PBC. Production AI for government, agentic AI that gets approved, and more than a decade behind the camera.">
+  <meta property="og:image" content="https://www.billyhunt.com/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Billy Hunt III logo over a synthwave sunset">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Billy Hunt · AI Engineering Lead">
+  <meta name="twitter:description" content="AI engineering lead at Nava PBC. Production AI for government, agentic AI that gets approved, and more than a decade behind the camera.">
+  <meta name="twitter:image" content="https://www.billyhunt.com/img/og-image.jpg">
+
+  <link rel="icon" href="/favicon.ico" sizes="16x16">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Audiowide&family=Dosis:wght@400&family=Open+Sans:wght@300;400;600&family=Press+Start+2P&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Audiowide&family=Dosis:wght@400&family=Open+Sans:wght@300;400;600&family=Press+Start+2P&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Audiowide&family=Dosis:wght@400&family=Open+Sans:wght@300;400;600&family=Press+Start+2P&display=swap"></noscript>
+  <link rel="preload" as="image" href="/img/logo.png" fetchpriority="high">
+  <link rel="preload" as="image" href="/img/hero.webp" type="image/webp" media="(min-width: 961px)">
+  <link rel="preload" as="image" href="/img/hero-960.webp" type="image/webp" media="(max-width: 960px)">
+  <link rel="stylesheet" href="/style.css">
+  <script>
+    // Runs before first paint so the pause button and a saved pause cause no layout shift.
+    document.documentElement.classList.add("js");
+    try { if (localStorage.getItem("motion") === "paused") document.documentElement.classList.add("paused"); } catch (e) {}
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Billy Hunt",
+    "url": "https://www.billyhunt.com/",
+    "image": "https://www.billyhunt.com/img/headshot.jpg",
+    "jobTitle": "Principal AI Engineering Lead",
+    "worksFor": { "@type": "Organization", "name": "Nava PBC", "url": "https://www.navapbc.com/" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "James Madison University" },
+    "email": "mailto:billy@billyhunt.com",
+    "sameAs": [
+      "https://www.linkedin.com/in/billyhunt/",
+      "https://github.com/billyhunt"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="hero" id="top">
+    <div class="hero-art" aria-hidden="true">
+      <span class="sparkle" style="--x: 20.1%; --y: 5.2%; --s: 1.4; --d: 0s"></span>
+      <span class="sparkle" style="--x: 17.4%; --y: 13%; --s: .7; --d: 1.1s"></span>
+      <span class="sparkle" style="--x: 15.8%; --y: 19.5%; --s: .9; --d: 2.3s"></span>
+      <span class="sparkle" style="--x: 11.5%; --y: 17%; --s: .6; --d: .6s"></span>
+      <span class="sparkle" style="--x: 18.5%; --y: 29%; --s: .8; --d: 1.7s"></span>
+      <span class="sparkle" style="--x: 22%; --y: 40%; --s: 1; --d: .3s"></span>
+      <span class="sparkle" style="--x: 6%; --y: 31%; --s: .7; --d: 2.8s"></span>
+      <span class="sparkle" style="--x: 9%; --y: 47%; --s: .6; --d: 1.4s"></span>
+      <span class="sparkle" style="--x: 79.8%; --y: 5.2%; --s: 1.4; --d: .9s"></span>
+      <span class="sparkle" style="--x: 82.5%; --y: 13%; --s: .7; --d: 2s"></span>
+      <span class="sparkle" style="--x: 84.2%; --y: 19.5%; --s: .9; --d: .2s"></span>
+      <span class="sparkle" style="--x: 88.5%; --y: 17%; --s: .6; --d: 1.5s"></span>
+      <span class="sparkle" style="--x: 81.5%; --y: 29%; --s: .8; --d: 2.6s"></span>
+      <span class="sparkle" style="--x: 78%; --y: 40%; --s: 1; --d: 1.2s"></span>
+      <span class="sparkle" style="--x: 94%; --y: 31%; --s: .7; --d: .5s"></span>
+      <span class="sparkle" style="--x: 91%; --y: 47%; --s: .6; --d: 2.2s"></span>
+    </div>
+    <nav class="nav" aria-label="Primary">
+      <a class="nav-logo" href="#top" aria-label="BHIII, Billy Hunt home">BHIII</a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#photography">Photography</a></li>
+        <li><a href="#music">Music</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="motion-item"><button class="motion-toggle" type="button"><span class="motion-pause">Pause</span><span class="motion-play">Play</span><span class="motion-noun"> motion</span></button></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <h1>
+        <img class="hero-logo" src="/img/logo.png" alt="Billy Hunt III" width="2000" height="728" fetchpriority="high">
+      </h1>
+      <p class="typed">
+        <span class="sr-only">AI engineering lead, agentic systems builder, civic technologist, photographer, musician, filmmaker.</span>
+        <span class="typed-text" aria-hidden="true" data-words="AI Engineering Lead|Agentic Systems|Civic Technologist|Photographer|Musician|Filmmaker">AI Engineering Lead</span><span class="cursor" aria-hidden="true"></span>
+      </p>
+    </div>
+    <a class="scroll-down" href="#about" aria-label="Scroll to About"></a>
+  </header>
+
+  <main id="main">
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <h2 class="section-title" id="about-title">About Billy</h2>
+      <div class="about-grid">
+        <div>
+          <p class="lead">AI Engineering Lead at Nava PBC, where I’ve spent almost seven years building software for federal and state government.</p>
+          <p>Right now I work on AI strategy and architecture for a state unemployment system. I’ve put an LLM system into production for a state agency, helped an agency approve its first agentic AI coding tool, and built the infrastructure that lets other teams do the same. I still build hands-on every day.</p>
+          <p>I also spent more than a decade as a photographer and filmmaker, and I play keytar and drums in two bands. That’s where my eye for design and my patience for craft come from.</p>
+          <ul class="link-row">
+            <li><a href="/billy-hunt-resume.pdf">Resume <span class="meta">(PDF)</span></a></li>
+            <li><a href="https://www.linkedin.com/in/billyhunt/">LinkedIn</a></li>
+            <li><a href="https://github.com/billyhunt">GitHub</a></li>
+            <li><a href="mailto:billy@billyhunt.com">Email</a></li>
+          </ul>
         </div>
-        <!-- End Page Loader -->
-        
-        <!-- Page Wrap -->
-        <div class="page" id="top">
-            
-            <!-- Home Section -->
-            <section class="home-section bg-dark-alfa-30 parallax-2" data-background="images/full-width-images/bg-hero2.jpg" id="home">
-                <div class="js-height-full container">
-                    <!-- Hero Content -->
-                    <div class="home-content">
-                        <div class="home-text">
-                            <img class="billyhunt-80s-logo" src="images/billyhunt-iii.png" />
-                            <img class="nerd-artist" src="images/nerd-artist.png" />
-                            <!--<h1 class="hs-line-1 font-alt mb-80 mb-xs-30 mt-50 mt-sm-0">-->
-                                <!--Billy Hunt-->
-                            <!--</h1>-->
+        <picture>
+          <source srcset="/img/headshot.avif" type="image/avif">
+          <source srcset="/img/headshot.webp" type="image/webp">
+          <img class="portrait" src="/img/headshot.jpg" alt="Portrait of Billy Hunt" width="512" height="512" loading="lazy">
+        </picture>
+      </div>
+    </section>
 
-                            <div class="typed-container">
-                                <span id="typed"></span>
-                            </div>
+    <section class="arcade" id="skills" aria-labelledby="skills-title">
+      <div class="starfield" aria-hidden="true"></div>
+      <canvas class="lightcycles" aria-hidden="true"></canvas>
+      <div class="arcade-inner">
+        <h2 id="skills-title">HIGH SCORE</h2>
+        <table class="scores" role="table">
+          <caption class="sr-only">Skills, ranked</caption>
+          <thead class="sr-only" role="rowgroup">
+            <tr role="row"><th scope="col" role="columnheader">Rank</th><th scope="col" role="columnheader">Skill</th><th scope="col" role="columnheader">Tools</th></tr>
+          </thead>
+          <tbody role="rowgroup">
+            <tr role="row"><td role="cell">1</td><td role="cell">AGENTIC AI</td><td role="cell">CLAUDE CODE · CODEX · MCP · AGENT WORKFLOWS</td></tr>
+            <tr role="row"><td role="cell">2</td><td role="cell">LLM SYSTEMS</td><td role="cell">CLAUDE ON BEDROCK · RAG · OPEN-WEIGHT MODELS</td></tr>
+            <tr role="row"><td role="cell">3</td><td role="cell">AI EVALUATION</td><td role="cell">RUBRIC SCORING · LLM-AS-JUDGE · HUMAN REVIEW</td></tr>
+            <tr role="row"><td role="cell">4</td><td role="cell">AI GOVERNANCE</td><td role="cell">AI POLICY · SECURITY APPROVAL · COST ATTRIBUTION</td></tr>
+            <tr role="row"><td role="cell">5</td><td role="cell">LEADERSHIP</td><td role="cell">100-PERSON PROGRAMS · COACHING · STAKEHOLDERS</td></tr>
+            <tr role="row"><td role="cell">6</td><td role="cell">AWS + TERRAFORM</td><td role="cell">LAMBDA · OPENSEARCH · EVENTBRIDGE · CLOUDFRONT</td></tr>
+            <tr role="row"><td role="cell">7</td><td role="cell">PYTHON</td><td role="cell">SQLALCHEMY · POSTGRESQL · PYTEST</td></tr>
+            <tr role="row"><td role="cell">8</td><td role="cell">TYPESCRIPT</td><td role="cell">REACT · NEXT.JS · USWDS</td></tr>
+            <tr role="row"><td role="cell">9</td><td role="cell">COMPLIANCE</td><td role="cell">IRS-1075 · NIST 800-53 · WCAG 2.1 AA</td></tr>
+          </tbody>
+        </table>
+        <p class="press-start-row" hidden><button class="press-start" type="button" aria-describedby="press-start-help">PRESS START</button></p>
+        <p class="press-start-help" id="press-start-help" hidden>Ride the cyan light cycle with the arrow keys or WASD. On a touch screen, tap left or right to turn.</p>
+      </div>
+    </section>
 
-                        </div>
-                    </div>
-                    <!-- End Hero Content -->
-                    
-                    <!-- Scroll Down -->
-                    <div class="local-scroll">
-                        <a href="#about" class="scroll-down"><i class="fa fa-angle-down scroll-down-icon"></i></a>
-                    </div>
-                    <!-- End Scroll Down -->
-                    
-                </div>
-            </section>
-            <!-- End Home Section -->
-            
-            <!-- Navigation panel -->
-            <nav class="main-nav dark transparent stick-fixed">
-                <div class="full-wrapper relative clearfix">
-                    <!-- Logo ( * your text or image into link tag *) -->
-                    <div class="nav-logo-wrap local-scroll">
-                        <a href="#top" class="logo">
-                            <h4>BHIII</h4>
-                        </a>
-                    </div>
-                    <div class="mobile-nav">
-                        <i class="fa fa-bars"></i>
-                    </div>
-                    <!-- Main Menu -->
-                    <div class="inner-nav desktop-nav">
-                        <ul class="clearlist scroll-nav local-scroll">
-                            <li class="active"><a href="#home">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#skills">Skills</a></li>
-                            <li><a href="#experience">Experience</a></li>
-                            <li><a href="#portfolio">Portfolio</a></li>
-                            <li><a href="#testimonials">Testimonials</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <!-- End Navigation panel -->
-            
-            
-            <!-- About Section -->
-            <section class="page-section" id="about">
-                <div class="container relative">
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <div class="exp-grid">
+        <h2 class="section-title" id="experience-title">Experience</h2>
+        <ol class="timeline">
+          <li>
+            <p class="when">2020–present</p>
+            <div>
+              <h3>Nava PBC</h3>
+              <p>Almost seven years at a public benefit corporation that builds government services, across CMS, the Department of Justice and New Jersey.</p>
+              <ol class="roles">
+                <li>
+                  <h4>Principal AI Engineering Lead <span class="years">2026–present</span></h4>
+                  <p>AI strategy and architecture for New Jersey’s unemployment system, across AI special projects and mainframe modernization. I also run weekly AI Engineering Office Hours for Nava’s ~300-person engineering org.</p>
+                </li>
+                <li>
+                  <h4>Principal Software Engineering Manager &amp; Engineering Contract Lead, NJ Unemployment Modernization <span class="years">2023–2025</span></h4>
+                  <p>Co-led the program as it grew from about 50 to 100 people. Shipped the new Intake Application and cut its P99 latency from 15+ minutes to under a second; the modernization won a 2024 Government Experience Award. Raised the team’s eNPS from 13 to 55.</p>
+                </li>
+                <li>
+                  <h4>Engineering Team Lead / Senior Software Engineer, DOJ ADA.gov &amp; Civil Rights Portal <span class="years">2021–2022</span></h4>
+                  <p>Led Nava’s Department of Justice work and delivered the new ADA.gov, winner of the Service to the Citizen Award. Made civilrights.justice.gov 5x faster and cut the backlog of unanswered reports by 80%.</p>
+                </li>
+                <li>
+                  <h4>Senior Software Engineer, CMS Cloud <span class="years">2020–2021</span></h4>
+                  <p>Built APIs, front end and high-availability AWS infrastructure for cloud.cms.gov, and set up Nava’s first QA process and CI/CD.</p>
+                </li>
+              </ol>
+            </div>
+          </li>
+          <li>
+            <p class="when">Before 2020</p>
+            <div>
+              <h3>Astraea · Silverchair · Center for Open Science</h3>
+              <p>Senior front-end developer and UI designer on a geospatial platform, UI developer for scholarly publishing, and full-stack developer on the Open Science Framework.</p>
+            </div>
+          </li>
+          <li>
+            <p class="when">2002–2017</p>
+            <div>
+              <h3>Billy Hunt Photography · Powhatan Studios</h3>
+              <p>Photography for clients including John Grisham and The Washington Post, video for Dave Matthews Band, then a web and mobile studio.</p>
+            </div>
+          </li>
+        </ol>
+        <p class="creds">B.S. Computer Science, James Madison University · AWS Certified AI Practitioner · Nielsen Norman Group UX Certification</p>
+      </div>
+    </section>
 
-                    <h2 class="section-title font-alt text-center mb-70 mb-sm-40">
-                        About Billy
-                    </h2>
+    <section class="section work" id="work" aria-labelledby="work-title">
+      <h2 class="section-title" id="work-title">Work</h2>
+      <ul class="grid">
+        <li class="card">
+          <div class="tile" style="--hue: 300" aria-hidden="true"><span>TF</span></div>
+          <h3><a href="https://github.com/navapbc/terraform-aws-claude-code-bedrock">terraform-aws-claude-code-bedrock</a></h3>
+          <p>Claude Code on Amazon Bedrock with per-developer cost tracking and budget controls, so agencies can run agentic coding inside their own AWS boundary.</p>
+          <p class="tag">Open source</p>
+        </li>
+        <li class="card">
+          <div class="tile" style="--hue: 185" aria-hidden="true"><span>AI</span></div>
+          <h3>Aida</h3>
+          <p>Drafts appeal decisions for a state agency’s examiners with Claude on Bedrock and retrieval grounded in state law. Every draft is scored against a rubric, with human review.</p>
+          <p class="tag">Client work</p>
+        </li>
+        <li class="card">
+          <div class="tile" style="--hue: 45" aria-hidden="true"><span>CBL</span></div>
+          <h3>AI-assisted COBOL documentation</h3>
+          <p>A legacy mainframe codebase documented in months instead of years, as the baseline for its modernization.</p>
+          <p class="tag">Client work</p>
+        </li>
+        <li class="card">
+          <div class="tile" style="--hue: 140" aria-hidden="true"><span>FN</span></div>
+          <h3>Finchy</h3>
+          <p>A policy RAG assistant grown from a Slack bot into web, Slack, REST API and MCP, at a fraction of the cost of a full drafting system.</p>
+          <p class="tag">Client work</p>
+        </li>
+        <li class="card">
+          <div class="tile" style="--hue: 330" aria-hidden="true"><span>MCP</span></div>
+          <h3><a href="https://github.com/navapbc/unanet-mcp-server">Unanet MCP server</a></h3>
+          <p>Maps a 1,267-operation ERP API into safe-read tools for AI assistants, with human review on writes.</p>
+          <p class="tag">Open source</p>
+        </li>
+        <li class="card">
+          <div class="tile" style="--hue: 210" aria-hidden="true"><span>QL</span></div>
+          <h3>Nava QuickLaunch</h3>
+          <p>Turns AI-built tools into secured sites in minutes. Hosts 6+ apps, including C-suite dashboards built by non-engineers.</p>
+          <p class="tag">Internal · Nava</p>
+        </li>
+        <li class="card">
+          <div class="tile" style="--hue: 265" aria-hidden="true"><span>RVN</span></div>
+          <h3>Ravens agent fleet</h3>
+          <p>A hardened fleet of Claude and Codex coding agents: scripts, templates and a security model for running agents in parallel.</p>
+          <p class="tag">Private</p>
+        </li>
+        <li class="card">
+          <div class="tile" style="--hue: 25" aria-hidden="true"><span>PI</span></div>
+          <h3><a href="https://github.com/billyhunt/pi-code-modernization">pi-code-modernization</a></h3>
+          <p>Structured, approval-gated legacy-code modernization workflows.</p>
+          <p class="tag">Open source</p>
+        </li>
+        <li class="card">
+          <div class="tile" style="--hue: 170" aria-hidden="true"><span>MD</span></div>
+          <h3><a href="https://github.com/billyhunt/alethia-markdown-editor">Alethia</a></h3>
+          <p>A macOS markdown editor where the markdown renders in place as you type.</p>
+          <p class="tag">Open source</p>
+        </li>
+        <li class="card">
+          <div class="tile" style="--hue: 50" aria-hidden="true"><span>PX</span></div>
+          <h3><a href="https://github.com/billyhunt/pixelstick-bitmaps">pixelstick-bitmaps</a></h3>
+          <p>Bitmaps I made for light painting with the Pixelstick, where the code and the camera meet.</p>
+          <p class="tag">Open source</p>
+        </li>
+      </ul>
+    </section>
 
-                    <div class="section-text mb-50 mb-sm-20">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <blockquote>
-                                    <p>
-                                    I love art like a nerd loves computers.  I also love computers, but I love art more.
-                                    </p>
-                                </blockquote>
-                                <p>
-                                    Software Developer with a passion for art, technology, and design; an experienced developer with a maker’s aesthetic who believes that creativity and attention to detail are both needed to create good work.
-                                </p>
-                            </div>
-                            <div class="col-sm-4 col-md-6 mb-xs-30 wow fadeInUp">
-                                <div class="team-item">
+    <section class="photography" id="photography" aria-labelledby="photography-title">
+      <div class="photography-inner">
+        <h2 class="section-title" id="photography-title">Photography</h2>
+        <p class="photo-intro">Portraits, events and film for clients including John Grisham, The Washington Post and Dave Matthews Band.</p>
+        <ul class="mosaic">
+          <li><img src="/img/photo-light-portrait-1.webp" alt="Light-painted portrait of a bearded man in darkness" width="900" height="600" loading="lazy"></li>
+          <li><img src="/img/photo-grisham.webp" alt="Portrait of author John Grisham" width="560" height="840" loading="lazy"></li>
+          <li><img src="/img/photo-claw-1.webp" alt="An arm wrestler mid-match, shouting" width="900" height="600" loading="lazy"></li>
+          <li><img src="/img/photo-wedding-2.webp" alt="Two men in suits dancing at a wedding reception" width="900" height="600" loading="lazy"></li>
+          <li><img src="/img/photo-claw-wings.webp" alt="A performer with red bat wings, head bowed" width="651" height="418" loading="lazy"></li>
+          <li><img src="/img/photo-claw-3.webp" alt="An older woman cheering in a crowd" width="900" height="598" loading="lazy"></li>
+          <li><img src="/img/photo-boombox.webp" alt="A vintage boombox" width="700" height="466" loading="lazy"></li>
+          <li><img src="/img/photo-claw-penalty.webp" alt="Two arm wrestlers mid-match with cardboard penalty boxes on their heads" width="900" height="598" loading="lazy"></li>
+          <li><img src="/img/photo-claw-4.webp" alt="A crowd of spectators reacting at an arm wrestling match" width="900" height="600" loading="lazy"></li>
+          <li><img src="/img/photo-wedding-1.webp" alt="A dancer lifted overhead at a wedding reception" width="900" height="600" loading="lazy"></li>
+          <li><img src="/img/photo-claw-5.webp" alt="A costumed wrestler with blue hair in front of a crowd" width="900" height="600" loading="lazy"></li>
+        </ul>
+      </div>
+    </section>
 
-                                    <div class="team-item-image">
+    <section class="section music" id="music" aria-labelledby="music-title">
+      <h2 class="section-title" id="music-title">Music</h2>
+      <p class="photo-intro">Keytar and drums.</p>
+      <ul class="grid music-grid">
+        <li class="card">
+          <a class="video" href="https://vimeo.com/1061424856" data-embed="https://player.vimeo.com/video/1061424856?autoplay=1&amp;dnt=1" data-title="Dystaron, “Voyager”" aria-label="Play Dystaron’s “Voyager” here"><img class="photo" src="/img/music-dystaron.webp" alt="Title card from Dystaron’s Voyager music video" width="800" height="600" loading="lazy"><span class="play" aria-hidden="true"></span></a>
+          <h3>Dystaron</h3>
+          <p>A D.C. trio with Jason Hamacher and Dave NeSmith, somewhere between post-hardcore, synthwave and ambient. I play keytar.</p>
+          <p class="links"><a href="https://vimeo.com/1061424856">Watch “Voyager” (2025)</a></p>
+        </li>
+        <li class="card">
+          <a class="video" href="https://www.youtube.com/watch?v=xNc41OoV__s" data-embed="https://www.youtube-nocookie.com/embed/xNc41OoV__s?autoplay=1" data-title="Buck Gooter, “Tusks” live" aria-label="Play Buck Gooter’s “Tusks” here"><img class="photo" src="/img/music-buck-gooter.webp" alt="Buck Gooter performing live on a red-lit stage" width="800" height="600" loading="lazy"><span class="play" aria-hidden="true"></span></a>
+          <h3>Buck Gooter</h3>
+          <p>Harrisonburg’s “primal industrial blues” band, around since 2005. I joined in 2023 on synth and drums.</p>
+          <p class="links"><a href="https://www.youtube.com/watch?v=xNc41OoV__s">Watch “Tusks” live (2024)</a> · <a href="https://buckgooter.bandcamp.com/track/king-kong-lives">Listen to “King Kong Lives” (2025)</a></p>
+        </li>
+        <li class="card">
+          <a class="video" href="https://www.youtube.com/watch?v=XWQJM9G11Mg" data-embed="https://www.youtube-nocookie.com/embed/XWQJM9G11Mg?autoplay=1" data-title="Corn Rocket, “Sublink KaPow!”" aria-label="Play Corn Rocket’s “Sublink KaPow!” here"><img class="photo" src="/img/music-corn-rocket.webp" alt="Corn Rocket playing a basement show, one guitarist in a Santa suit" width="480" height="360" loading="lazy"><span class="play" aria-hidden="true"></span></a>
+          <h3>Corn Rocket</h3>
+          <p>My band in 1993.</p>
+          <p class="links"><a href="https://www.youtube.com/watch?v=XWQJM9G11Mg">Watch “Sublink KaPow!” (1993)</a></p>
+        </li>
+      </ul>
+    </section>
 
-                                        <img src="images/headshot.jpg" alt="" />
-
-                                        <div class="team-item-detail">
-
-                                            <h4 class="font-alt normal">Nice to Meet You!</h4>
-                                            <div class="team-social-links">
-                                                <a href="https://www.facebook.com/billyhuntiii" title="Facebook" ><i class="fa fa-facebook"></i></a>
-                                                <a href="https://twitter.com/billyhunt" title="Twitter"><i class="fa fa-twitter"></i></a>
-                                                <a href="https://www.linkedin.com/in/billyhunt/" title="LinkedIn+"><i class="fa fa-linkedin"></i></a>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- End About Section -->
-            <section class="page-section" id="skills">
-                <div class="stars"></div>
-                <div class="twinkling"></div>
-                <h1 class="text-center">SKILLS</h1>
-                <div class="col-md-8 col-lg-offset-2">
-                    <div class="row ">
-                        <h4 class="col-lg-2 col-md-2 col-sm-2 col-xs-1 skills-rank">1</h4>
-                        <h4 class="col-lg-4 col-md-4 col-sm-4 col-xs-3">97%</h4>
-                        <h4 class="col-lg-6 col-md-6 col-sm-6 col-xs-6">JAVASCRIPT</h4>
-                    </div>
-                    <div class="row">
-                        <h4 class="col-lg-2 col-md-2 col-sm-2 col-xs-1 skills-rank">2</h4>
-                        <h4 class="col-lg-4 col-md-4 col-sm-4 col-xs-3">97%</h4>
-                        <h4 class="col-lg-6 col-md-6 col-sm-6 col-xs-6">REACT</h4>
-                    </div>
-                    <div class="row">
-                        <h4 class="col-lg-2 col-md-2 col-sm-2 col-xs-1 skills-rank">3</h4>
-                        <h4 class="col-lg-4 col-md-4 col-sm-4 col-xs-3">92%</h4>
-                        <h4 class="col-lg-6 col-md-6 col-sm-6 col-xs-6">UX</h4>
-                    </div>
-                    <div class="row">
-                        <h4 class="col-lg-2 col-md-2 col-sm-2 col-xs-1 skills-rank">4</h4>
-                        <h4 class="col-lg-4 col-md-4 col-sm-4 col-xs-3">91%</h4>
-                        <h4 class="col-lg-6 col-md-6 col-sm-6 col-xs-6">GIT</h4>
-                    </div>
-                    <div class="row">
-                        <h4 class="col-lg-2 col-md-2 col-sm-2 col-xs-1 skills-rank">5</h4>
-                        <h4 class="col-lg-4 col-md-4 col-sm-4 col-xs-3">90%</h4>
-                        <h4 class="col-lg-6 col-md-6 col-sm-6 col-xs-6">MERCURIAL</h4>
-                    </div>
-                    <div class="row">
-                        <h4 class="col-lg-2 col-md-2 col-sm-2 col-xs-1 skills-rank">6</h4>
-                        <h4 class="col-lg-4 col-md-4 col-sm-4 col-xs-3">90%</h4>
-                        <h4 class="col-lg-6 col-md-6 col-sm-6 col-xs-6">DESIGN</h4>
-                    </div>
-                    <div class="row">
-                        <h4 class="col-lg-2 col-md-2 col-sm-2 col-xs-1 skills-rank">7</h4>
-                        <h4 class="col-lg-4 col-md-4 col-sm-4 col-xs-3">88%</h4>
-                        <h4 class="col-lg-6 col-md-6 col-sm-6 col-xs-6">PYTHON</h4>
-                    </div>
-                    <div class="row">
-                        <h4 class="col-lg-2 col-md-2 col-sm-2 col-xs-1 skills-rank">8</h4>
-                        <h4 class="col-lg-4 col-md-4 col-sm-4 col-xs-3">86%</h4>
-                        <h4 class="col-lg-6 col-md-6 col-sm-6 col-xs-6">KNOCKOUT</h4>
-                    </div>
-                    <div class="row">
-                        <h4 class="col-lg-2 col-md-2 col-sm-2 col-xs-1 skills-rank">9</h4>
-                        <h4 class="col-lg-4 col-md-4 col-sm-4 col-xs-3">84%</h4>
-                        <h4 class="col-lg-6 col-md-6 col-sm-6 col-xs-6">OBJECTIVE C</h4>
-                    </div>
-
-                </div>
-            </section>
-
-            <!-- Divider -->
-            <hr class="mt-0 mb-0 "/>
-            <!-- End Divider -->
-            <section class="page-section" id="experience">
-                <div class="container relative">
-                    <div class="row">
-
-                        <!-- Section Title -->
-                        <div class="col-sm-3">
-                            <h2 class="section-title font-alt align-left mt-0 mb-70 mb-sm-40">Experience</h2>
-                        </div>
-                        <!-- End Section Title -->
-
-                        <!-- Section Content -->
-                        <div class="col-sm-9">
-                            <div class="section-text">
-                                <div class="row">
-                                    <div class="col-md-2 black">2017-present</div>
-                                    <div class="col-md-10">
-                                        <h4 class="mt-0 mb-0">Owner - Powhatan Studios</h4>
-                                        Full service web and mobile application studio focused on creating great user experiences.
-                                    </div>
-                                </div>
-
-                                <hr>
-
-                                <div class="row">
-                                    <div class="col-md-2 black">2017</div>
-                                    <div class="col-md-10">
-                                        <h4 class="mt-0 mb-0">Co Owner - CoolKDS</h4>
-                                        A company used to create a mobile app for displaying orders in restaurants.  The app ties into the Square API to display orders in realtime on a tablet.
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="row">
-                                    <div class="col-md-2 black">2016–2017</div>
-                                    <div class="col-md-10">
-                                        <h4 class="mt-0 mb-0">UI Developer - Silverchair Information Systems</h4>
-                                        Silverchair Information Systems delivers scholarly content online.  While there, I was lead UI developer American Medical Association’s website, worked on other high profile sites like Oxford University Press, and assisted my coworkers when there were complicated JavaScript problems.
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="row">
-                                    <div class="col-md-2 black">2015–2016</div>
-                                    <div class="col-md-10">
-                                        <h4 class="mt-0 mb-0">Full Stack Developer - Center for Open Science</h4>
-                                        COS is a non-profit technology company providing free and open services to increase inclusivity and transparency of research. My work is primarily on the Open Science Framework, a research tool for scientists to publish, share, and collaborate throughout the entire scientific process. Within COS, I focused on UI/UX, working with our "Community" team to try and better understand the user, to build a better product.
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="row">
-                                    <div class="col-md-2 black">2002–2015</div>
-                                    <div class="col-md-10">
-                                        <h4 class="mt-0 mb-0">Owner - Billy Hunt Software, Photography, and Video</h4>
-                                        Created and grew a full-service media company able to produce mobile applications as well as quality imagery and video for television, web, and film. Consulted with businesses on the use of social media to build brand awareness. Managed film crews of up to 25 people. Delivered projects on time and on budget to clients all over the world, including John Grisham, The Dave Matthews Band, Adult Swim, BUST magazine, Modern Luxury, The Washington Post, The Wall Street Journal, The Guardian, The New York Post, More magazine, Virginia Living magazine, Urban Ink, and a ton of cool bands, people, and businesses.
-                                    </div>
-                                </div>
-                                <hr>
-
-                            </div>
-                        </div>
-                        <!-- End Section Content -->
-
-                    </div>
-                </div>
-            </section>
-            
-            
-            <!-- Call Action Section -->
-            <section class="page-section pt-0 pb-0 banner-section bg-dark" data-background="images/tron5.gif">
-                <div class="container relative">
-                    
-                    <div class="row">
-                        
-                        <div class="col-sm-6">
-                            
-                            <div class="mt-140 mt-lg-80 mb-140 mb-lg-80">
-                                <div class="banner-content">
-                                    <div>
-                                        <h4 class="font-alt mt-0 mb-20">Profile</h4>
-                                        <div>
-                                            <strong>Address:</strong>
-                                            408 E Market St.  #104A
-                                        </div>
-                                        <div>
-                                            <strong>Phone:</strong>
-                                            434 825 7721
-                                        </div>
-                                        <div>
-                                            <strong>Email:</strong>
-                                            <a href="#">billy@billyhunt.com</a>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="local-scroll lets-talk">
-                                        <a href="#contact" class="btn btn-mod btn-w btn-medium btn-round">Lets talk</a>
-                                    </div>
-                                    <div class="resume">
-                                        <a href="./images/cv-resume/billy-hunt-resume-2017.pdf" class="btn btn-mod btn-border-w btn-medium btn-round" target="_blank">Download Resume</a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        
-                        <div class="col-sm-6 banner-image wow fadeInUp">
-                            <img src="images/promo-1.2.png" alt="" />
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-            </section>
-            <!-- End Call Action Section -->
-            
-            
-            <!-- Portfolio Section -->
-            <section class="page-section pb-0" id="portfolio">
-                <div class="relative">
-                    
-                    <h2 class="section-title font-alt mb-70 mb-sm-40">
-                        Portfolio
-                    </h2>
-                    
-                    <!-- Works Filter -->                    
-                    <div class="works-filter font-alt align-center">
-                        <a href="#" class="filter active" data-filter="*">All works</a>
-                        <a href="#software" class="filter" data-filter=".software">Software</a>
-                        <a href="#video" class="filter" data-filter=".video">Video</a>
-                        <a href="#photography" class="filter" data-filter=".photography">Photography</a>
-                    </div>                    
-                    <!-- End Works Filter -->
-                    
-                    <!-- Works Grid -->
-                    <ul class="works-grid work-grid-3 work-grid-gut clearfix font-alt hover-white hide-titles" id="work-grid">
-                        
-                        <!-- Work Item (Lightbox) -->
-                        <li class="work-item mix software">
-                            <a href="https://jamanetwork.com/" class="work-ext-link">
-                                <div class="work-img">
-                                    <img src="images/portfolio/ama.jpg" alt="Work" />
-                                </div>
-                                <div class="work-intro">
-                                    <h3 class="work-title">American Medical Association</h3>
-                                    <div class="work-descr">
-                                        Lead Front End Developer for The American Medical Association's JAMA website.
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <!-- End Work Item -->
-
-
-                        <!-- Work Item (Lightbox) -->
-                        <li class="work-item mix design photography">
-                            <a href="" class="portfolio-lightbox-1 mfp-image">
-                                <div class="work-img">
-                                    <img src="images/portfolio/book-portrait1.jpg" alt="Work" />
-                                </div>
-                                <div class="work-intro">
-                                    <h3 class="work-title">Laser Portraits</h3>
-                                    <div class="work-descr">
-
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <!-- End Work Item -->
-
-                        <!-- Work Item (Lightbox) -->
-                        <li class="work-item mix design photography">
-                            <a href="./images/Usability_and_Design.pdf"  target="_blank">
-                                <div class="work-img">
-                                    <img src="images/portfolio/ux-talk.jpg" alt="Work" />
-                                </div>
-                                <div class="work-intro">
-                                    <h3 class="work-title">Usability and Design</h3>
-                                    <div class="work-descr">
-                                        Presentation I created on usability and design delivered to COS, based primarily on Donald Norman's book, "The Design of Everyday Things".
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <!-- End Work Item -->
-
-                        <!-- Work Item (External Page) -->
-                        <li class="work-item mix  software">
-                            <a href="http://www.osf.io" class="work-ext-link">
-                                <div class="work-img">
-                                    <img class="work-img" src="images/portfolio/osf.jpg" alt="Work" />
-                                </div>
-                                <div class="work-intro">
-                                    <h3 class="work-title">Open Science Framework</h3>
-                                    <div class="work-descr">
-                                        Full Stack Developer on The Open Science Framework
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <!-- End Work Item -->
-                        
-                        <!-- Work Item (External Page) -->
-                        <li class="work-item mix video">
-                            <a href="https://vimeo.com/27917133" class="work-lightbox-link mfp-iframe">
-                                <div class="work-img">
-                                    <img class="work-img" src="images/portfolio/da-bird.jpg" alt="Work" />
-                                </div>
-                                <div class="work-intro">
-                                    <h3 class="work-title">Da Bird</h3>
-                                    <div class="work-descr">
-                                        Music Video for We Are Star Children
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <!-- End Work Item -->
-
-                        
-                        <!-- Work Item (External Page) -->
-                        <li class="work-item mix software">
-                            <a href="https://itunes.apple.com/us/app/house-music-radio-free/id881989526?mt=8" class="work-ext-link">
-                                <div class="work-img">
-                                    <img class="work-img" src="images/portfolio/House-Radio-Horiz.jpg" alt="Work" />
-                                </div>
-                                <div class="work-intro">
-                                    <h3 class="work-title">House Music Radio</h3>
-                                    <div class="work-descr">
-                                        iOS app I created to discover new House Music
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <!-- End Work Item -->
-                        
-                        <!-- Work Item (Lightbox) -->
-                        <li class="work-item mix design photography video">
-                            <a href="" class="portfolio-lightbox-2 mfp-image">
-                                <div class="work-img">
-                                    <img src="images/portfolio/claw.jpg" alt="Work" />
-                                </div>
-                                <div class="work-intro">
-                                    <h3 class="work-title">Collective of Lady Arm Wrestlers</h3>
-                                    <div class="work-descr">
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <!-- End Work Item -->
-
-                        <!-- Work Item (External Page) -->
-                        <li class="work-item mix software">
-                            <a href="https://itunes.apple.com/us/app/house-music-radio-free/id881989526?mt=8" class="work-ext-link">
-                                <div class="work-img">
-                                    <img class="work-img" src="images/portfolio/childhood-dev.jpg" alt="Work" />
-                                </div>
-                                <div class="work-intro">
-                                    <h3 class="work-title">Virginia's Milestones of Childhood Development</h3>
-                                    <div class="work-descr">
-                                        iOS app I created for United Way of Richmond to help mothers track their child's development, and seek treatment if needed.
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <!-- End Work Item -->
-
-                        <!-- Work Item (Lightbox) -->
-                        <li class="work-item mix design photography">
-                            <a href="" class="portfolio-lightbox-3 mfp-image">
-                                <div class="work-img">
-                                    <img src="images/portfolio/grisham-thumb.jpg" alt="Work" />
-                                </div>
-                                <div class="work-intro">
-                                    <h3 class="work-title">John Grisham Author Photo</h3>
-                                    <div class="work-descr">
-                                        I had the privilege to shoot John Grisham’s Author photo for his latest book, Grey Mountain. His main requirements were that I be fast and not bring a lot of equipment. Check and check. The whole shoot lasted 20 minutes. I gave him 5 or 6 to choose from, and he picked the best of the bunch. He wanted a black and white image, and we went with a sort of retro hip look informed by the Instagram generation, but not beholden to it.
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <!-- End Work Item -->
-
-                        <!--&lt;!&ndash; Work Item (External Page) &ndash;&gt;-->
-                        <!--<li class="work-item mix branding photography">-->
-                            <!--<a href="" class="mfp-image portfolio-lightbox-4 ">-->
-                                <!--<div class="work-img">-->
-                                    <!--<img class="work-img" src="images/portfolio/IMG_37091.jpg" alt="Work" />-->
-                                <!--</div>-->
-                                <!--<div class="work-intro">-->
-                                    <!--<h3 class="work-title">Wedding Dance</h3>-->
-                                    <!--<div class="work-descr">-->
-                                        <!--External Page-->
-                                    <!--</div>-->
-                                <!--</div>-->
-                            <!--</a>-->
-                        <!--</li>-->
-                        <!--&lt;!&ndash; End Work Item &ndash;&gt;-->
-
-                    </ul>
-                    <!-- End Works Grid -->
-                    
-                </div>
-            </section>
-            <!-- End Portfolio Section -->
-            
-            <!-- Testimonials Section -->
-            <section id="testimonials" class="page-section bg-dark bg-dark-alfa-90 fullwidth-slider" data-background="images/full-width-images/section-bg-3.jpg">
-                
-                <!-- Slide Item -->
-                <div>
-                    <div class="container relative">
-                        <div class="row">
-                            <div class="col-md-8 col-md-offset-2 align-center">
-                                <!-- Section Icon -->
-                                <div class="section-icon">
-                                    <span class="icon-quote"></span>
-                                </div>
-                                <!-- Section Title --><h3 class="small-title font-alt">What people say?</h3>
-                                <blockquote class="testimonial white">
-                                    <p>
-                                        "Billy was easy to work with, accommodated our needs and requests, set clear expectations, and worked within our budget.  We were quite pleased with the result, and I recommend him highly."
-                                    </p>
-                                    <footer class="testimonial-author">
-                                        Dave Norris - Former Mayor, City of Charlottesville
-                                    </footer>
-                                </blockquote>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Slide Item -->
-                
-                <!-- Slide Item -->
-                <div>
-                    <div class="container relative">
-                        <div class="row">
-                            <div class="col-md-8 col-md-offset-2 align-center">
-                                <!-- Section Icon -->
-                                <div class="section-icon">
-                                    <span class="icon-quote"></span>
-                                </div>
-                                <!-- Section Title --><h3 class="small-title font-alt">What people say?</h3>
-                                <blockquote class="testimonial white">
-                                    <p>
-                                        Billy’s a seasoned full-stack developer with strong skills in UX and Interactive design.  He cares deeply about the products he builds, from backend technical architecture to front end interactions.  And he’s a total trip.
-                                    </p>
-                                    <footer class="testimonial-author">
-                                        Brian McDonald, UX Manager, Silverchair Information Systems
-                                    </footer>
-                                </blockquote>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Slide Item -->
-                
-                <!-- Slide Item -->
-                <div>
-                    <div class="container relative">
-                        <div class="row">
-                            <div class="col-md-8 col-md-offset-2 align-center">
-                                <!-- Section Icon -->
-                                <div class="section-icon">
-                                    <span class="icon-quote"></span>
-                                </div>
-                                <!-- Section Title --><h3 class="small-title font-alt">What people say?</h3>
-                                <blockquote class="testimonial white">
-                                    <p>
-                                        Billy has an eye for building high quality products and empathy for users that is rare for a software developer. He is also the funnest person I have ever worked with.
-                                    </p>
-                                    <footer class="testimonial-author">
-                                        Steve Loria, Senior Developer / Team Lead, Center for Open Science
-                                    </footer>
-                                </blockquote>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Slide Item -->
-
-            </section>
-            <!-- End Testimonials Section -->
-            
-            <!-- Contact Section -->
-            <section class="page-section" id="contact">
-                <div class="container relative">
-                    
-                    <h2 class="section-title font-alt mb-70 mb-sm-40">
-                        Contact
-                    </h2>
-                    
-                    <div class="row mb-60 mb-xs-40">
-                        
-                        <div class="col-md-8 col-md-offset-2">
-                            <div class="row">
-                                
-                                <!-- Phone -->
-                                <div class="col-sm-6 col-lg-4 pt-20 pb-20 pb-xs-0">
-                                    <div class="contact-item">
-                                        <div class="ci-icon">
-                                            <i class="fa fa-phone"></i>
-                                        </div>
-                                        <div class="ci-title font-alt">
-                                            Call Me
-                                        </div>
-                                        <div class="ci-text">
-                                            434 825 7721
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Phone -->
-                                
-                                <!-- Address -->
-                                <div class="col-sm-6 col-lg-4 pt-20 pb-20 pb-xs-0">
-                                    <div class="contact-item">
-                                        <div class="ci-icon">
-                                            <i class="fa fa-map-marker"></i>
-                                        </div>
-                                        <div class="ci-title font-alt">
-                                            Address
-                                        </div>
-                                        <div class="ci-text">
-                                            408 E Market St.  #104A, Charlottesville, VA 22902
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Address -->
-                                
-                                <!-- Email -->
-                                <div class="col-sm-6 col-lg-4 pt-20 pb-20 pb-xs-0">
-                                    <div class="contact-item">
-                                        <div class="ci-icon">
-                                            <i class="fa fa-envelope"></i>
-                                        </div>
-                                        <div class="ci-title font-alt">
-                                            Email
-                                        </div>
-                                        <div class="ci-text">
-                                            <a href="mailto:support@bestlooker.pro">billy@billyhunt.com</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Email -->
-                                
-                            </div>
-                        </div>
-                        
-                    </div>
-                    
-                    <!-- Contact Form -->                            
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            
-                            <form class="form contact-form" id="contact_form">
-                                <div class="clearfix">
-                                    
-                                    <div class="cf-left-col">
-                                        
-                                        <!-- Name -->
-                                        <div class="form-group">
-                                            <input type="text" name="name" id="name" class="input-md round form-control" placeholder="Name" pattern=".{3,100}" required>
-                                        </div>
-                                        
-                                        <!-- Email -->
-                                        <div class="form-group">
-                                            <input type="email" name="email" id="email" class="input-md round form-control" placeholder="Email" pattern=".{5,100}" required>
-                                        </div>
-                                        
-                                    </div>
-                                    
-                                    <div class="cf-right-col">
-                                        
-                                        <!-- Message -->
-                                        <div class="form-group">                                            
-                                            <textarea name="message" id="message" class="input-md round form-control" style="height: 84px;" placeholder="Message"></textarea>
-                                        </div>
-                                        
-                                    </div>
-                                    
-                                </div>
-                                
-                                <div class="clearfix">
-                                    
-                                    <div class="cf-left-col">
-                                        
-                                        <!-- Inform Tip -->                                        
-                                        <div class="form-tip pt-20">
-                                            <i class="fa fa-info-circle"></i> All the fields are required
-                                        </div>
-                                        
-                                    </div>
-                                    
-                                    <div class="cf-right-col">
-                                        
-                                        <!-- Send Button -->
-                                        <div class="align-right pt-10">
-                                            <button class="submit_btn btn btn-mod btn-medium btn-round" id="submit_btn">Submit Message</button>
-                                        </div>
-                                        
-                                    </div>
-                                    
-                                </div>
-                                
-                                
-                                
-                                <div id="result"></div>
-                            </form>
-                            
-                        </div>
-                    </div>
-                    <!-- End Contact Form -->
-                    
-                </div>
-            </section>
-            <!-- End Contact Section -->
-            
-            
-            <!-- Footer -->
-            <footer class="page-section bg-gray-lighter footer pb-60">
-                <div class="container">
-                    
-                    <!-- Footer Logo -->
-                    <div class="local-scroll mb-30 wow fadeInUp" data-wow-duration="1.5s">
-                        <a href="#top"><img src="images/billyhunt-III-logo.png" width="78" height="36" alt="" /></a>
-                    </div>
-                    <!-- End Footer Logo -->
-                    
-                    <!-- Social Links -->
-                    <div class="footer-social-links mb-110 mb-xs-60">
-
-                        <a href="https://www.facebook.com/billyhuntiii" title="Facebook"><i class="fa fa-facebook"></i></a>
-                        <a href="https://twitter.com/billyhunt" title="Twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="https://www.linkedin.com/in/billyhunt/" title="LinkedIn+"><i class="fa fa-linkedin"></i></a>
-                    </div>
-                    <!-- End Social Links -->
-
-                    <!-- Footer Text -->
-                    <div class="footer-text">
-
-                        <!-- Copyright -->
-                        <div class="footer-copy font-alt">
-                            <a href="http://themeforest.net/user/theme-guru/portfolio" target="_blank">&copy; Rhythm 2017</a>.
-                        </div>
-                        <!-- End Copyright -->
-
-                        <div class="footer-made">
-                            Made with love for great people.
-                        </div>
-
-                    </div>
-                    <!-- End Footer Text -->
-                    
-                 </div>
-                 
-                 
-                 <!-- Top Link -->
-                 <div class="local-scroll">
-                     <a href="#top" class="link-to-top"><i class="fa fa-caret-up"></i></a>
-                 </div>
-                 <!-- End Top Link -->
-                 
-            </footer>
-            <!-- End Foter -->
-        
-        
+    <section class="testimonials" id="testimonials" aria-labelledby="testimonials-title">
+      <div class="starfield" aria-hidden="true"></div>
+      <div class="testimonials-inner">
+        <h2 class="section-title" id="testimonials-title">What people say</h2>
+        <div class="quotes">
+          <figure>
+            <blockquote>
+              <p>“Billy is a rare find in the development world: his code and work is stellar, but more importantly, he always thought ahead and made recommendations about next phase features and enhancements. He’s also simply a ton of fun to work with: funny, empathetic and hard working. Any team would be lucky to work with Billy. 10/10 stars.”</p>
+            </blockquote>
+            <figcaption>Randy D.A.<span>Senior Director of Digital Strategy and Products</span></figcaption>
+          </figure>
+          <figure>
+            <blockquote>
+              <p>“Billy preceded and has stayed at the forefront of AI capability at Nava. Before the decision to become an AI native organization, … Billy was evaluating the landscape, finding the wins, and documenting the misses for others to learn from. He established high delivery agent supported development teams.”</p>
+            </blockquote>
+            <figcaption>Jess Fortier<span>Principal Engineering Manager, Nava PBC</span></figcaption>
+          </figure>
+          <figure>
+            <blockquote>
+              <p>“Billy was my direct boss and throughout his tenure as my manager he was empowering, connected me with opportunity, and focused fiercely on getting things done. … He also possesses qualities rare amongst engineering leadership: the ability to flex into technical details and people details as needed.”</p>
+            </blockquote>
+            <figcaption>Daniel Saier Jr<span>Senior Technical Talent Acquisition Partner, Nava PBC</span></figcaption>
+          </figure>
         </div>
-        <!-- End Page Wrap -->
-        
-        
-        <!-- JS -->
-        <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
-        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>        
-        <script type="text/javascript" src="js/SmoothScroll.js"></script>
-        <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
-        <script type="text/javascript" src="js/jquery.localScroll.min.js"></script>
-        <script type="text/javascript" src="js/jquery.viewport.mini.js"></script>
-        <script type="text/javascript" src="js/jquery.countTo.js"></script>
-        <script type="text/javascript" src="js/jquery.appear.js"></script>
-        <script type="text/javascript" src="js/jquery.sticky.js"></script>
-        <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
-        <script type="text/javascript" src="js/jquery.fitvids.js"></script>
-        <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-        <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
-        <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
-        <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
-        <script type="text/javascript" src="js/gmap3.min.js"></script>
-        <script type="text/javascript" src="js/wow.min.js"></script>
-        <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
-        <script type="text/javascript" src="js/jquery.simple-text-rotator.min.js"></script>
-        <script type="text/javascript" src="js/typed.min.js"></script>
-        <script type="text/javascript" src="js/all.js"></script>
-        <script type="text/javascript" src="js/contact-form.js"></script>
-        <script type="text/javascript" src="js/jquery.ajaxchimp.min.js"></script>       
-        <!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
-        
-    </body>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <h2 class="section-title" id="contact-title">Contact</h2>
+      <p class="lead">Email <a href="mailto:billy@billyhunt.com">billy@billyhunt.com</a> or find me on <a href="https://www.linkedin.com/in/billyhunt/">LinkedIn</a> and <a href="https://github.com/billyhunt">GitHub</a>.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Billy Hunt</p>
+  </footer>
+
+  <script src="/motion.js" defer></script>
+  <script src="/typed.js" defer></script>
+  <script src="/lightcycles.js" defer></script>
+  <script src="/video.js" defer></script>
+</body>
 </html>
