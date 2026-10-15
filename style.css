@@ -302,6 +302,11 @@ html:not(.js) .motion-item { display: none; }
   animation: twinkle 3.2s ease-in-out infinite alternate;
 }
 @keyframes twinkle { from { opacity: .15; } to { opacity: .9; } }
+/* Behind the quotes, stars read as specks on the letters; keep them to the edges. */
+.testimonials .starfield {
+  -webkit-mask-image: linear-gradient(#000, rgba(0, 0, 0, .15) 140px, rgba(0, 0, 0, .15) calc(100% - 100px), #000);
+  mask-image: linear-gradient(#000, rgba(0, 0, 0, .15) 140px, rgba(0, 0, 0, .15) calc(100% - 100px), #000);
+}
 
 .lightcycles {
   position: absolute;
@@ -425,6 +430,10 @@ html:has(.arcade.playing) { overflow: hidden; }
   margin: 0;
   padding: 0;
   list-style: none;
+}
+/* The work grid is 3 columns from 944px; center a last card that would sit alone. */
+@media (min-width: 944px) {
+  .work .grid > :last-child:nth-child(3n+1) { grid-column: 2; }
 }
 
 .card p { margin: 0; color: var(--muted); font-size: 15px; line-height: 1.6; }
