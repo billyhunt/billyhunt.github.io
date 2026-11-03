@@ -461,6 +461,8 @@ html:has(.arcade.playing) { overflow: hidden; }
   margin-bottom: 16px;
   object-fit: cover;
 }
+/* Logos (Finchy, Atlas): whole mark on white, not cropped to fill. */
+.photo.logo { object-fit: contain; background: #fff; padding: 10px; box-sizing: border-box; }
 .tile {
   display: grid;
   place-items: center;
